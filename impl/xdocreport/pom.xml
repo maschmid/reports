@@ -9,10 +9,6 @@
 	<artifactId>seam-reports-xdocreport</artifactId>
 	<name>Seam Reports Implementation (XDocReport)</name>
 	<description>An implementation of Seam Reports using XDocReport: http://code.google.com/p/xdocreport/</description>
-	<properties>
-		<xdocreport.version>0.9.1</xdocreport.version>
-		<el-api.version>2.2</el-api.version>
-	</properties>
 
     <build>
         <finalName>seam-reports-xdocreport</finalName>

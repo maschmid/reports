@@ -32,6 +32,7 @@
 	<properties>
 		<seam.version>3.1.0.Beta2</seam.version>
 		<jpdfunit.version>1.1</jpdfunit.version>
+        <xdocreport.version>0.9.1</xdocreport.version>
 	</properties>
 
 	<dependencyManagement>

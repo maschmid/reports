@@ -38,20 +38,20 @@ import org.jboss.shrinkwrap.resolver.api.maven.MavenResolutionFilter;
  */
 public class DefaultDeploymentFactory implements DeploymentFactory {
 
-    public static final String SETTINGS_XML = "../../settings.xml";
-    public static final String SEAM_REPORTS_API_JAR = "../../api/target/seam-reports-api.jar";
+    public static final String SETTINGS_XML = "../settings.xml";
+    public static final String SEAM_REPORTS_API_JAR = "../api/target/seam-reports-api.jar";
     
-    public static final String SEAM_REPORTS_JASPER_JAR = "../../impl/jasper/target/seam-reports-jasper.jar";
-    public static final String SEAM_REPORTS_JASPER_POM = "../../impl/jasper/pom.xml";
+    public static final String SEAM_REPORTS_JASPER_JAR = "../impl/jasper/target/seam-reports-jasper.jar";
+    public static final String SEAM_REPORTS_JASPER_POM = "../impl/jasper/pom.xml";
     
-    public static final String SEAM_REPORTS_MVEL_JAR = "../../impl/mvel/target/seam-reports-mvel.jar";
-    public static final String SEAM_REPORTS_MVEL_POM = "../../impl/mvel/pom.xml";
+    public static final String SEAM_REPORTS_MVEL_JAR = "../impl/mvel/target/seam-reports-mvel.jar";
+    public static final String SEAM_REPORTS_MVEL_POM = "../impl/mvel/pom.xml";
     
-    public static final String SEAM_REPORTS_PENTAHO_JAR = "../../impl/pentaho/target/seam-reports-pentaho.jar";
-    public static final String SEAM_REPORTS_PENTAHO_POM = "../../impl/pentaho/pom.xml";
+    public static final String SEAM_REPORTS_PENTAHO_JAR = "../impl/pentaho/target/seam-reports-pentaho.jar";
+    public static final String SEAM_REPORTS_PENTAHO_POM = "../impl/pentaho/pom.xml";
     
-    public static final String SEAM_REPORTS_XDOCREPORT_JAR = "../../impl/xdocreport/target/seam-reports-xdocreport.jar";
-    public static final String SEAM_REPORTS_XDOCREPORT_POM = "../../impl/xdocreport/pom.xml";
+    public static final String SEAM_REPORTS_XDOCREPORT_JAR = "../impl/xdocreport/target/seam-reports-xdocreport.jar";
+    public static final String SEAM_REPORTS_XDOCREPORT_POM = "../impl/xdocreport/pom.xml";
      
     private static final MavenResolutionFilter seamReportsJarFilter = new MavenResolutionFilter() {
         @Override

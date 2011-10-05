@@ -17,22 +17,13 @@
 
 package org.jboss.seam.reports.test;
 
-import java.util.ServiceLoader;
-
 public class Utils {
-    
-    private static ServiceLoader<DeploymentFactory> deploymentFactoryLoader = ServiceLoader.load(DeploymentFactory.class);
-    
     public static DeploymentFactory getDeploymentFactory() {
-        DeploymentFactory deploymentFactory = null;
-        for (DeploymentFactory factory : deploymentFactoryLoader) {
-            deploymentFactory = factory; 
+        if ("jbossas-managed-7".equals(System.getProperty("arquillian"))) {
+            return new DefaultDeploymentFactory();
         }
-        
-        if (deploymentFactory == null) {
-            deploymentFactory = new DefaultDeploymentFactory();
+        else {
+            return new EmbeddedDeploymentFactory();
         }
-        
-        return deploymentFactory;
     }
 }
